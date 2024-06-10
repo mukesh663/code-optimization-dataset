@@ -1,4 +1,4 @@
-﻿Unoptimized code ,Optimized code ,Time complexity (unoptimized),Time complexity (optimized),Language ,Description
+Unoptimized code ,Optimized code ,Time complexity (unoptimized),Time complexity (optimized),Language ,Description
 unoptimized\1.txt,optimized\1.txt,O(1),O(1),python,Combined conditions to streamline logic.
 unoptimized\2.txt,optimized\2.txt,O(n),O(1),java,Used @PostMapping and returned the created entity instead of fetching all records.
 unoptimized\3.txt,optimized\3.txt,O(n),O(n),java,Extracted the repeated logic for initializing themes and updating stylesheets into separate methods.
@@ -27,3 +27,4 @@ unoptimized\25.txt,optimized\25.txt,O(n),O(n),java,"Optimized code multiplies th
 unoptimized\26.txt,optimized\26.txt,O(n^2),O(n),java,The optimized version uses a single loop with a set containment check.
 unoptimized\27.txt,optimized\27.txt,O(n^2),O(n),java,The optimized version simplifies this to O(n) by using a single loop and a map to efficiently check for duplicates and update quantities.
 unoptimized\28.txt,optimized\28.txt,O(n),O(n),java,Optimized version retains a clear and concise check for the ? character and constructs the string efficiently using a StringBuilder.
+unoptimized\29.txt,optimized\29.txt,O(1),O(1),java,"Combined the saveUser and updateUser methods into a single method saveOrUpdateUser that uses a request object, reducing redundancy and simplifies the service logic."

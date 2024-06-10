@@ -1,0 +1,21 @@
+@Service
+public class UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public User saveOrUpdateUser(UserRequest userRequest) {
+        User user;
+        if (userRequest.getId() != null) {
+            user = userRepository.findById(userRequest.getId()).orElse(new User());
+        } else {
+            user = new User();
+        }
+        
+        user.setName(userRequest.getName());
+        user.setEmail(userRequest.getEmail());
+        // Update other fields as needed
+        
+        return userRepository.save(user);
+    }
+}
